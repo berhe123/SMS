@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "List";
+}
+@section scripts {
+    <script src="~/Scripts/Views/Payment/Payment_List.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuPaymentList" />
+<div class="container-fluid">
+    <ul class="breadcrumb">
+            <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+            <li class="divider"></li>
+            <li>Payment List</li>
+        </ul>
+        <div class="separator bottom">
+        </div>
+        <div class="innerLR">
+            <div class="widget">
+                <div class="widget-head">
+                    <h4 class="heading glyphicons cardio">
+                        <i></i>Payment List</h4>
+                </div>
+                <div class="widget-body">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div id="Form">
+                                @Html.Partial("PaymentListForm")
+                            </div>
+                        </div>
+                    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered table-striped table-condensed" id="tblPayment">
+                <thead>
+                    <tr>                        
+                        <th>
+                            Payments
+                        </th>
+                        <th>
+                            Payment Date
+                        </th>
+                        <th>
+                            TIN Number
+                        </th>  
+                        <th>
+                            FS Number
+                        </th>                                                                     
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div id="Form-Button_holder">
+                                <br/>
+                                <button class="btn btn-primary" type="button">Payment List</button>
+                                <button class="btn" type="button">UnPayment List</button>                           
+                        </div>
+                    </div>
+</div></div></div>
+</div> 

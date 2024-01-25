@@ -1,0 +1,6 @@
+﻿<form class="form-horizontal">   
+    @Helpers.Select("ClassRoom", "Class Room", "ClassRooms()", "LessonClassGuid", 52)
+    @Helpers.Select("LessonClass", "Lesson Class", "LessonClasses()", "LessonClassGuid", "disabled", 52)
+    @Helpers.Date("Date", "Date", "required")
+    @Helpers.TextArea("Comment", "Comment", "required", "text", 50, 5, false)          
+</form>

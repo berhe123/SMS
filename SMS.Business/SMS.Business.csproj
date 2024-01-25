@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F6E5ECC-0C96-4795-A36E-59A2AB677699}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Business</RootNamespace>
+    <AssemblyName>SMS.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SMS.Data\SMS.Context.cs">
+      <Link>SMS.Context.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridQueryHelper.cs" />
+    <Compile Include="Services\ExamScheduleSvc.cs" />
+    <Compile Include="Services\GenderSvc - Copy.cs" />
+    <Compile Include="Services\GroupNameSvc.cs" />
+    <Compile Include="Services\IndividualWorkScheduleSvc.cs" />
+    <Compile Include="Services\IndividualWorkResultSvc.cs" />
+    <Compile Include="Services\GroupMemberSvc.cs" />
+    <Compile Include="Services\GroupWorkScheduleSvc.cs" />
+    <Compile Include="Services\MonthSvc.cs" />
+    <Compile Include="Services\DaySvc.cs" />
+    <Compile Include="Services\GroupWorkResultSvc.cs" />
+    <Compile Include="Services\ExerciseBookResultSvc.cs" />
+    <Compile Include="Services\ExamResultSvc.cs" />
+    <Compile Include="Services\PaymentCalanderToClassRoomSvc.cs" />
+    <Compile Include="Services\StudentAttendanceSvc.cs" />
+    <Compile Include="Services\StudentClassRoomSvc.cs" />
+    <Compile Include="Services\StudentCommentSvc.cs" />
+    <Compile Include="Services\WorkerSvc.cs" />
+    <Compile Include="Services\TestResultSvc.cs" />
+    <Compile Include="Services\QuizResultSvc.cs" />
+    <Compile Include="Services\TestScheduleSvc.cs" />
+    <Compile Include="Services\QuizScheduleSvc.cs" />
+    <Compile Include="Services\PaymentSvc.cs" />
+    <Compile Include="Services\SessionSvc.cs" />
+    <Compile Include="Services\LessonClassSvc.cs" />
+    <Compile Include="Services\ParentSvc.cs" />
+    <Compile Include="Services\ClassRoomsForPaymentCalanderSvc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\PaymentCalanderSvc.cs" />
+    <Compile Include="Services\FeeSettingSvc.cs" />
+    <Compile Include="Services\AcademicCalanderSvc.cs" />
+    <Compile Include="Services\HolidaySvc.cs" />
+    <Compile Include="Services\PeriodSvc.cs" />
+    <Compile Include="Services\SubjectTeacherClassRoomSvc.cs" />
+    <Compile Include="Services\TeacherSvc.cs" />
+    <Compile Include="Services\StudentSvc.cs" />
+    <Compile Include="Services\SubjectSvc.cs" />
+    <Compile Include="Services\ClassRoomSvc.cs" />
+    <Compile Include="SMSEntities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AppSettingSvc.cs" />
+    <Compile Include="Services\EntityBaseIntSvc.cs" />
+    <Compile Include="Services\EntityBaseSvc.cs" />
+    <Compile Include="Services\FilterSpecSvc.cs" />
+    <Compile Include="Services\LoggingSvc.cs" />
+    <Compile Include="Services\ReadOnlyEntityBaseSvc.cs" />
+    <Compile Include="Services\RoleSvc.cs" />
+    <Compile Include="Services\UserProfileSvc.cs" />
+    <Compile Include="Services\UsersLocationSvc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Core\SMS.Core.csproj">
+      <Project>{4f2e0629-2411-4c00-8118-fe2517b93aea}</Project>
+      <Name>SMS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Entities\SMS.Entities.csproj">
+      <Project>{9e872c87-c891-40da-ab8a-703487f0e9b4}</Project>
+      <Name>SMS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SMS.Data\SMS.Context.tt">
+      <Link>SMS.Context.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SMS.Context.cs</LastGenOutput>
+      <CustomToolNamespace>SMS.Entities</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

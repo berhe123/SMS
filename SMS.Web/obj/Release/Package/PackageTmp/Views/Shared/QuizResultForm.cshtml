@@ -1,0 +1,6 @@
+﻿<form class="form-horizontal">     
+   @Helpers.Select("ClassRoom", "Class Room", "ClassRooms()", "QuizGuid", 50)
+   @Helpers.Select("Quiz", "Quiz", "Quizs()", "QuizGuid", "disabled", 50)          
+   @Helpers.Input("Result", "Result", "required digits", "text", 47)
+   @Helpers.TextArea("Comment", "Comment", "required", "text", 47, 5, false)
+</form>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+@section scripts{
+    <script src="~/plugins/MetroJs/MetroJs.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/Views/Home_Index.js" type="text/javascript"></script>
+}
+<link href="~/plugins/MetroJs/MetroJs.min.css" rel="stylesheet" type="text/css" />
+<br />
+<br />
+        <div class="client card">
+            <div class="card-body text-center">
+                <div class="client-avatar"><img src="~/Images/img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                <div class="client-title">
+                    <h3>@User.Identity.Name</h3><span>Maths and Physics<br /> Teacher</span><a href="#">View</a>
+                </div>
+                <div class="client-info">
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <small>Teaches</small><br /><strong>2</strong><br /><small>Subjects</small>
+                        </div>
+                        <div class="span4">
+                            <small>Teaches</small><br /><strong>2</strong><br /><small>Classes</small>
+                        </div>
+                        <div class="span4">
+                            <small>Home Teacher</small><br /><small>for</small><br /><strong>3C class</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-social d-flex justify-content-between">
+                    <div class="row-fluid">
+                        <div class="span3"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></div>
+                        <div class="span2"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                        <div class="span2"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></div>
+                        <div class="span2"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></div>
+                        <div class="span3"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+

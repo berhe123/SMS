@@ -1,0 +1,521 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+@section scripts{
+    <script src="~/Scripts/Views/AppSetting/AppSetting_Edit.js" type="text/javascript"></script>
+}
+
+<input id="mnu-active" type="hidden" value="mnuAppSetting" />
+
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+        <li class="divider"></li>
+        <li>Application Settings</li>
+    </ul>
+    <div class="separator bottom">
+    </div>
+    <div class="innerLR">
+        <div class="widget">
+            <div class="widget-head">
+                <h4 class="heading glyphicons cardio">
+                    <i></i>Application Settings</h4>
+            </div>
+            <div class="widget-body">
+                <div class="row-fluid">
+                    <div id="Form" class="form-horizontal">
+                        <div class="row-fluid">
+                            @*<div id="content" class="span10">*@
+                            @*<form class="form-horizontal">*@
+                            <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                                <li class="active"><a href="#Organization" data-toggle="tab">Organization</a></li>
+                                <li><a href="#vat" data-toggle="tab">Vat and Witholding</a></li>
+                                <li><a href="#BatchIssuance" data-toggle="tab">Batch Issuance</a></li>
+                                <li><a href="#Transaction" data-toggle="tab">Transaction</a></li>
+                            </ul>
+                            <div id="my-tab-content" class="tab-content">
+                                <div class="tab-pane active" id="Organization">
+                                    <div class="control-group">
+                                        <div id="TinNumber">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("TIN #", "SettingValue", "required digits", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div id="VatNumber">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Vat #", "SettingValue", "required digits", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div id="OrganizationAddress">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Address", "SettingValue", "required digits", "text", 70)
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="vat">
+                                    <div class="control-group">
+                                        <div id="VatPercentage">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Vat Percentage", "SettingValue", "required number", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div id="WithHoldingPercentage">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Withholding Percentage", "SettingValue", "required number", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div id="TresholdAmountToApplyWithHolding">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Apply Withholding If Amount >=", "SettingValue", "required number", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div id="DueDateLength">
+                                            <form class="form-horizontal">
+                                                @Helpers.Input("Due Date Length (in Days)", "SettingValue", "required number", "text", 10)
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="BatchIssuance">
+                                    <div class="control-group">
+                                        <div id="ShowBatchesWithQuantityEqualToZeroForIssuance">
+                                            @*class="span8 row-fluid"*@
+                                            @Helpers.CheckBox("Show Batches With Zero Quantity?", "SettingValueAsBoolean", "")
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Transaction">
+
+
+
+                                    <div class="tabbable tabs-left">
+                                        <ul id="tabs1" class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="active"><a href="#ProductionOrder" data-toggle="tab">Production Order</a></li>
+                                            <li><a href="#PurchaseOrder" data-toggle="tab">Purchase Order</a></li>
+                                            <li><a href="#SuppliesRequisition" data-toggle="tab">Supplies Requisition</a></li>
+                                            <li><a href="#RawMaterialRequest" data-toggle="tab">Raw Material Request</a></li>
+                                            <li><a href="#SalesInvoice" data-toggle="tab">Sales Invoice</a></li>
+                                            <li><a href="#SalesOrder" data-toggle="tab">Sales Order</a></li>
+                                            <li><a href="#SalesReturn" data-toggle="tab">Sales Return</a></li>
+                                            <li><a href="#StoreTransactionIssuance" data-toggle="tab">Store Issuance</a></li>
+                                            <li><a href="#StoreTransactionReceiving" data-toggle="tab">Store Receiving</a></li>
+                                            <li><a href="#StoreTransactionLoss" data-toggle="tab">Store Loss</a></li>
+                                            <li><a href="#StoreTransactionDamage" data-toggle="tab">Store Damage</a></li>
+                                            <li><a href="#StoreTransactionInventoryAdjustment" data-toggle="tab">Inventory Adjustment</a></li>
+                                            <li><a href="#TransferOrder" data-toggle="tab">Transfer Order</a></li>
+                                            <li><a href="#PaymentRequest" data-toggle="tab">Payment Request</a></li>
+                                        </ul>
+                                        <div id="my-tab-content1" class="tab-content">
+                                            <div class="tab-pane active" id="ProductionOrder">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyReceivedProductionOrdersForReceiving">
+                                                        @Helpers.CheckBox("Show fully received production orders for receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForProductionOrder">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForProductionOrder">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForProductionOrder">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForProductionOrder">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="PurchaseOrder">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyReceivedPurchaseOrdersForReceiving">
+                                                        @Helpers.CheckBox("Show fully received purchase orders for receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForPurchaseOrder">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForPurchaseOrder">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForPurchaseOrder">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForPurchaseOrder">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="SuppliesRequisition">
+                                                <div class="control-group">
+                                                    <div class="control-group">
+                                                        <div id="ShowFullyReceivedSuppliesRequisitionsForReceiving">
+                                                            @Helpers.CheckBox("Show fully received supplies requisitions for receiving?", "SettingValueAsBoolean", "")
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div id="ShowFullyIssuedSuppliesRequisitionsForIssuance">
+                                                            @Helpers.CheckBox("Show fully issued supplies requisitions for issuance?", "SettingValueAsBoolean", "")
+                                                        </div>
+                                                    </div>
+                                                    <div id="AutoGenerateReferenceNumberForSuppliesRequisition">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForSuppliesRequisition">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForSuppliesRequisition">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForSuppliesRequisition">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="RawMaterialRequest">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyIssuedRawMaterialRequestsForIssuance">
+                                                        @Helpers.CheckBox("Show fully issued raw material requests for issuance?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForRawMaterialRequest">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForRawMaterialRequest">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForRawMaterialRequest">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForRawMaterialRequest">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="SalesInvoice">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyIssuedSalesInvoicesForIssuance">
+                                                        @Helpers.CheckBox("Show fully issued sales invoices for issuance?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group"> 
+                                                    <div id="ShowFullyReturnedSalesInvoicesForReturn">
+                                                        @Helpers.CheckBox("Show fully returned sales invoices for receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForSalesInvoice">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForSalesInvoice">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForSalesInvoice">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForSalesInvoice">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateSalesIssuance">
+                                                        @Helpers.CheckBox("Auto Generate Sales Issuance?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="SalesOrder">
+                                                <div class="control-group">
+                                                    <div id="ShowFullySoldSalesOrdersForSelling">
+                                                        @Helpers.CheckBox("Show fully sold sales orders for selling?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForSalesOrder">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForSalesOrder">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForSalesOrder">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForSalesOrder">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="SalesReturn">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyReceivedSalesReturnsForReceiving">
+                                                        @Helpers.CheckBox("Show fully received sales returns for receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForSalesReturn">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForSalesReturn">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForSalesReturn">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForSalesReturn">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="StoreTransactionIssuance">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForStoreTransactionIssuance">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForStoreTransactionIssuance">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForStoreTransactionIssuance">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForStoreTransactionIssuance">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="StoreTransactionReceiving">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForStoreTransactionReceiving">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForStoreTransactionReceiving">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForStoreTransactionReceiving">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForStoreTransactionReceiving">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="StoreTransactionLoss">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForStoreTransactionLoss">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForStoreTransactionLoss">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForStoreTransactionLoss">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForStoreTransactionLoss">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="StoreTransactionDamage">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForStoreTransactionDamage">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForStoreTransactionDamage">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForStoreTransactionDamage">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForStoreTransactionDamage">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="StoreTransactionInventoryAdjustment">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForStoreTransactionInventoryAdjustment">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForStoreTransactionInventoryAdjustment">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForStoreTransactionInventoryAdjustment">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForStoreTransactionInventoryAdjustment">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="TransferOrder">
+                                                <div class="control-group">
+                                                    <div id="ShowFullyIssuedInterStoreTransferOrdersForIssuance">
+                                                        @Helpers.CheckBox("Show fully issued transfer orders for issuance?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="ShowFullyReceivedInterStoreTransferOrdersForReceiving">
+                                                        @Helpers.CheckBox("Show fully received transfer orders for receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForInterStoreTransferOrder">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForInterStoreTransferOrder">
+                                                        @Helpers.Input("Reference # Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForInterStoreTransferOrder">
+                                                        @Helpers.Input("Reference # Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForInterStoreTransferOrder">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateTransferIssuanceAndReceiving">
+                                                        @Helpers.CheckBox("Auto Generate Transfer Issuance and Receiving?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="PaymentRequest">
+                                                <div class="control-group">
+                                                    <div id="AutoGenerateReferenceNumberForPaymentRequest">
+                                                        @Helpers.CheckBox("Auto Generate Reference Number?", "SettingValueAsBoolean", "")
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="PrefixForGeneratedReferenceNumberForPaymentRequest">
+                                                        @Helpers.Input("Prefix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="SuffixForGeneratedReferenceNumberForPaymentRequest">
+                                                        @Helpers.Input("Suffix", "SettingValue", "required", "text", 10)
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div id="NumberOfDigitsForGeneratedReferenceNumberForPaymentRequest">
+                                                        @Helpers.Input("# of Digits", "SettingValue", "required digits", "text", 10)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                            @*</form>*@
+                            @*</div>*@
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <div id="Form-Button_holder">
+                                    <br />
+                                    <br />
+                                    <button id="btnUpdateAppSettings" class="btn btn-primary" type="button">Update Settings</button>
+                                    @*data-bind="click: UpdateAppSettings"*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

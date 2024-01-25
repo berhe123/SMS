@@ -1,0 +1,12 @@
+﻿<form class="form-horizontal">
+    @Helpers.Select("ClassRoom", "Class Room", "ClassRooms()", "classroomGuid", 50)  
+    @Helpers.Select("Teacher", "Teacher", "Teachers()", "SubjectTeacherClassRoomGuid", "disabled", 50)
+    @Helpers.Select("Day", "Day", "Days()", "DayGuid", 50)        
+    @Helpers.Select("Session", "Sessions()", "SessionGuid", 50)
+    @Helpers.Date("Start TIme", "StartTime")  
+    @Helpers.Date("End Time", "EndTime")         
+    @Helpers.Input("Out Of", "OutOf", "required digits","text",50)   
+    @Helpers.TextArea("Information", "ExamInformation", "required","text",50,5,false)
+    @Helpers.Date("Given Date", "GivenDate")
+    @*@Helpers.Select("Examiner", "Examiner", "Examiners()", "ExaminerTeacherGuid", "disabled", 50)*@    
+</form>

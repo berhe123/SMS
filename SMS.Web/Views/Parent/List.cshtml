@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "List";
+}
+@section scripts {
+    <script src="~/Scripts/Views/Parent/Parent_List.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuParentList" />
+<div class="container-fluid">
+    <ul class="breadcrumb">
+            <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+            <li class="divider"></li>
+            <li>Parent List</li>
+        </ul>
+        <div class="separator bottom">
+        </div>
+        <div class="innerLR">
+            <div class="widget">
+                <div class="widget-head">
+                    <h4 class="heading glyphicons cardio">
+                        <i></i>Parent List</h4>
+                </div>
+                <div class="widget-body">
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered table-striped table-condensed" id="tblParent">
+                <thead>
+                    <tr>
+                        <th width="3%" class="action-button">
+                        </th>
+                        <th>
+                            Full Name
+                        </th>
+                        <th>
+                            Address
+                        </th>
+                        <th>
+                            Mobile Phone
+                        </th>
+                        <th>
+                            Home Phone
+                        </th>
+                        <th width="3%" class="action-button">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div></div></div>
+</div> 

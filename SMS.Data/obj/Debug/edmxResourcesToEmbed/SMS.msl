@@ -1,0 +1,1448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SMSModelStoreContainer" CdmEntityContainer="SMSEntities">
+    <EntitySetMapping Name="AcademicCalanders">
+      <EntityTypeMapping TypeName="SMSModel.AcademicCalander">
+        <MappingFragment StoreEntitySet="AcademicCalanders">
+          <ScalarProperty Name="AcademicName" ColumnName="AcademicName" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppSettings">
+      <EntityTypeMapping TypeName="SMSModel.AppSetting">
+        <MappingFragment StoreEntitySet="AppSettings">
+          <ScalarProperty Name="SettingKey" ColumnName="SettingKey" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassRooms">
+      <EntityTypeMapping TypeName="SMSModel.ClassRoom">
+        <MappingFragment StoreEntitySet="ClassRooms">
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassRoomsForPaymentCalanders">
+      <EntityTypeMapping TypeName="SMSModel.ClassRoomsForPaymentCalander">
+        <MappingFragment StoreEntitySet="ClassRoomsForPaymentCalanders">
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="ClassRoomSort" ColumnName="ClassRoomSort" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Days">
+      <EntityTypeMapping TypeName="SMSModel.Day">
+        <MappingFragment StoreEntitySet="Days">
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="DaySort" ColumnName="DaySort" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamResults">
+      <EntityTypeMapping TypeName="SMSModel.ExamResult">
+        <MappingFragment StoreEntitySet="ExamResults">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ExamScheduleGuid" ColumnName="ExamScheduleGuid" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamSchedules">
+      <EntityTypeMapping TypeName="SMSModel.ExamSchedule">
+        <MappingFragment StoreEntitySet="ExamSchedules">
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="ExamInformation" ColumnName="ExamInformation" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExerciseBookResults">
+      <EntityTypeMapping TypeName="SMSModel.ExerciseBookResult">
+        <MappingFragment StoreEntitySet="ExerciseBookResults">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeeSettings">
+      <EntityTypeMapping TypeName="SMSModel.FeeSetting">
+        <MappingFragment StoreEntitySet="FeeSettings">
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="SMSModel.Gender">
+        <MappingFragment StoreEntitySet="Genders">
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupMembers">
+      <EntityTypeMapping TypeName="SMSModel.GroupMember">
+        <MappingFragment StoreEntitySet="GroupMembers">
+          <ScalarProperty Name="GroupNameGuid" ColumnName="GroupNameGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupNames">
+      <EntityTypeMapping TypeName="SMSModel.GroupName">
+        <MappingFragment StoreEntitySet="GroupNames">
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="GroupName1" ColumnName="GroupName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupWorkResults">
+      <EntityTypeMapping TypeName="SMSModel.GroupWorkResult">
+        <MappingFragment StoreEntitySet="GroupWorkResults">
+          <ScalarProperty Name="GroupWorkScheduleGuid" ColumnName="GroupWorkScheduleGuid" />
+          <ScalarProperty Name="GroupNameGuid" ColumnName="GroupNameGuid" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupWorkSchedules">
+      <EntityTypeMapping TypeName="SMSModel.GroupWorkSchedule">
+        <MappingFragment StoreEntitySet="GroupWorkSchedules">
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="GroupWorkTitle" ColumnName="GroupWorkTitle" />
+          <ScalarProperty Name="GroupNameGuid" ColumnName="GroupNameGuid" />
+          <ScalarProperty Name="GroupWorkGivenDate" ColumnName="GroupWorkGivenDate" />
+          <ScalarProperty Name="GroupWorkSubmissionDate" ColumnName="GroupWorkSubmissionDate" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Holidays">
+      <EntityTypeMapping TypeName="SMSModel.Holiday">
+        <MappingFragment StoreEntitySet="Holidays">
+          <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+          <ScalarProperty Name="HolidayDate" ColumnName="HolidayDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndividualWorkResults">
+      <EntityTypeMapping TypeName="SMSModel.IndividualWorkResult">
+        <MappingFragment StoreEntitySet="IndividualWorkResults">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="IndividualWorkScheduleGuid" ColumnName="IndividualWorkScheduleGuid" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndividualWorkSchedules">
+      <EntityTypeMapping TypeName="SMSModel.IndividualWorkSchedule">
+        <MappingFragment StoreEntitySet="IndividualWorkSchedules">
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="IndividualWorkName" ColumnName="IndividualWorkName" />
+          <ScalarProperty Name="IndividualWorkGivenDate" ColumnName="IndividualWorkGivenDate" />
+          <ScalarProperty Name="IndividualWorkSubmissionDate" ColumnName="IndividualWorkSubmissionDate" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="IndividualWorkInformation" ColumnName="IndividualWorkInformation" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LessonClasses">
+      <EntityTypeMapping TypeName="SMSModel.LessonClass">
+        <MappingFragment StoreEntitySet="LessonClasses">
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Letters">
+      <EntityTypeMapping TypeName="SMSModel.Letter">
+        <MappingFragment StoreEntitySet="Letters">
+          <ScalarProperty Name="LetterName" ColumnName="LetterName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="SMSModel.Month">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="MonthSort" ColumnName="MonthSort" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentComments">
+      <EntityTypeMapping TypeName="SMSModel.ParentComment">
+        <MappingFragment StoreEntitySet="ParentComments">
+          <ScalarProperty Name="ParentGuid" ColumnName="ParentGuid" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parents">
+      <EntityTypeMapping TypeName="SMSModel.Parent">
+        <MappingFragment StoreEntitySet="Parents">
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="ReservedPhoneNumber" ColumnName="ReservedPhoneNumber" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentCalanders">
+      <EntityTypeMapping TypeName="SMSModel.PaymentCalander">
+        <MappingFragment StoreEntitySet="PaymentCalanders">
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+          <ScalarProperty Name="RegularPaymentDateFrom" ColumnName="RegularPaymentDateFrom" />
+          <ScalarProperty Name="RegularPaymentDateTo" ColumnName="RegularPaymentDateTo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentCalandersToClassRooms">
+      <EntityTypeMapping TypeName="SMSModel.PaymentCalandersToClassRoom">
+        <MappingFragment StoreEntitySet="PaymentCalandersToClassRoom">
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="RegularPaymentDateFrom" ColumnName="RegularPaymentDateFrom" />
+          <ScalarProperty Name="RegularPaymentDateTo" ColumnName="RegularPaymentDateTo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="SMSModel.Payment">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="FeeSettingGuid" ColumnName="FeeSettingGuid" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="TinNumber" ColumnName="TinNumber" />
+          <ScalarProperty Name="FSNumber" ColumnName="FSNumber" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Periods">
+      <EntityTypeMapping TypeName="SMSModel.Period">
+        <MappingFragment StoreEntitySet="Periods">
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuizResults">
+      <EntityTypeMapping TypeName="SMSModel.QuizResult">
+        <MappingFragment StoreEntitySet="QuizResults">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="QuizScheduleGuid" ColumnName="QuizScheduleGuid" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuizSchedules">
+      <EntityTypeMapping TypeName="SMSModel.QuizSchedule">
+        <MappingFragment StoreEntitySet="QuizSchedules">
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="QuizInformation" ColumnName="QuizInformation" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_Membership">
+      <EntityTypeMapping TypeName="SMSModel.security_Membership">
+        <MappingFragment StoreEntitySet="security_Membership">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_OAuthMembership">
+      <EntityTypeMapping TypeName="SMSModel.security_OAuthMembership">
+        <MappingFragment StoreEntitySet="security_OAuthMembership">
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="ProviderUserId" ColumnName="ProviderUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_Roles">
+      <EntityTypeMapping TypeName="SMSModel.security_Roles">
+        <MappingFragment StoreEntitySet="security_Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="SMSModel.Session">
+        <MappingFragment StoreEntitySet="Sessions">
+          <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+          <ScalarProperty Name="SessionSort" ColumnName="SessionSort" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentAttendances">
+      <EntityTypeMapping TypeName="SMSModel.StudentAttendance">
+        <MappingFragment StoreEntitySet="StudentAttendances">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentClassRooms">
+      <EntityTypeMapping TypeName="SMSModel.StudentClassRoom">
+        <MappingFragment StoreEntitySet="StudentClassRooms">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentComments">
+      <EntityTypeMapping TypeName="SMSModel.StudentComment">
+        <MappingFragment StoreEntitySet="StudentComments">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentProfiles">
+      <EntityTypeMapping TypeName="SMSModel.StudentProfile">
+        <MappingFragment StoreEntitySet="StudentProfile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="SMSModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="GrandFatherName" ColumnName="GrandFatherName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordVerification" ColumnName="PasswordVerification" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="SMSModel.Subject">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectTeacherClassRooms">
+      <EntityTypeMapping TypeName="SMSModel.SubjectTeacherClassRoom">
+        <MappingFragment StoreEntitySet="SubjectTeacherClassRooms">
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="HomeClassRoom" ColumnName="HomeClassRoom" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SMSModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherComments">
+      <EntityTypeMapping TypeName="SMSModel.TeacherComment">
+        <MappingFragment StoreEntitySet="TeacherComments">
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="SMSModel.Teacher">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="GrandFatherName" ColumnName="GrandFatherName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="ReservedPhoneNumber" ColumnName="ReservedPhoneNumber" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EngagementDate" ColumnName="EngagementDate" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestResults">
+      <EntityTypeMapping TypeName="SMSModel.TestResult">
+        <MappingFragment StoreEntitySet="TestResults">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="TestScheduleGuid" ColumnName="TestScheduleGuid" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestSchedules">
+      <EntityTypeMapping TypeName="SMSModel.TestSchedule">
+        <MappingFragment StoreEntitySet="TestSchedules">
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="TestInformation" ColumnName="TestInformation" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalGroupWorkResults">
+      <EntityTypeMapping TypeName="SMSModel.TotalGroupWorkResult">
+        <MappingFragment StoreEntitySet="TotalGroupWorkResult">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="ConverTo" ColumnName="ConverTo" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalIndividualWorkResults">
+      <EntityTypeMapping TypeName="SMSModel.TotalIndividualWorkResult">
+        <MappingFragment StoreEntitySet="TotalIndividualWorkResult">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="ConverTo" ColumnName="ConverTo" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalQuizResults">
+      <EntityTypeMapping TypeName="SMSModel.TotalQuizResult">
+        <MappingFragment StoreEntitySet="TotalQuizResult">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="ConverTo" ColumnName="ConverTo" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalSums">
+      <EntityTypeMapping TypeName="SMSModel.TotalSum">
+        <MappingFragment StoreEntitySet="TotalSum">
+          <ScalarProperty Name="AcademicCalanderGuid" ColumnName="AcademicCalanderGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TotalIndividualWorkResultGuid" ColumnName="TotalIndividualWorkResultGuid" />
+          <ScalarProperty Name="TotalGroupWorkResultGuid" ColumnName="TotalGroupWorkResultGuid" />
+          <ScalarProperty Name="TotalQuizResultGuid" ColumnName="TotalQuizResultGuid" />
+          <ScalarProperty Name="TotalTestResultGuid" ColumnName="TotalTestResultGuid" />
+          <ScalarProperty Name="ExerciseBookResultGuid" ColumnName="ExerciseBookResultGuid" />
+          <ScalarProperty Name="ExamResultGuid" ColumnName="ExamResultGuid" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalTestResults">
+      <EntityTypeMapping TypeName="SMSModel.TotalTestResult">
+        <MappingFragment StoreEntitySet="TotalTestResult">
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="ConverTo" ColumnName="ConverTo" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="SMSModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersInLocations">
+      <EntityTypeMapping TypeName="SMSModel.UsersInLocation">
+        <MappingFragment StoreEntitySet="UsersInLocations">
+          <ScalarProperty Name="UserGuid" ColumnName="UserGuid" />
+          <ScalarProperty Name="LocationGuid" ColumnName="LocationGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="SMSModel.Worker">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="GrandFatherName" ColumnName="GrandFatherName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="ReservedPhoneNumber" ColumnName="ReservedPhoneNumber" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EngagementDate" ColumnName="EngagementDate" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventSource" ColumnName="EventSource" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_ExamScheduleList">
+      <EntityTypeMapping TypeName="SMSModel.vw_ExamScheduleList">
+        <MappingFragment StoreEntitySet="vw_ExamScheduleList">
+          <ScalarProperty Name="ExamSchedule" ColumnName="ExamSchedule" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ExamInformation" ColumnName="ExamInformation" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="ExamScheduleGuid" ColumnName="ExamScheduleGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_FeeSettingList">
+      <EntityTypeMapping TypeName="SMSModel.vw_FeeSettingList">
+        <MappingFragment StoreEntitySet="vw_FeeSettingList">
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="FeeSettingGuid" ColumnName="FeeSettingGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_GroupNameList">
+      <EntityTypeMapping TypeName="SMSModel.vw_GroupNameList">
+        <MappingFragment StoreEntitySet="vw_GroupNameList">
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="GroupNameGuid" ColumnName="GroupNameGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_GroupWorkResultList">
+      <EntityTypeMapping TypeName="SMSModel.vw_GroupWorkResultList">
+        <MappingFragment StoreEntitySet="vw_GroupWorkResultList">
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="SubjectClassRoom" ColumnName="SubjectClassRoom" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GroupWorkResultGuid" ColumnName="GroupWorkResultGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_GroupWorkScheduleList">
+      <EntityTypeMapping TypeName="SMSModel.vw_GroupWorkScheduleList">
+        <MappingFragment StoreEntitySet="vw_GroupWorkScheduleList">
+          <ScalarProperty Name="GroupWork" ColumnName="GroupWork" />
+          <ScalarProperty Name="GroupWorkGivenDate" ColumnName="GroupWorkGivenDate" />
+          <ScalarProperty Name="GroupWorkSubmissionDate" ColumnName="GroupWorkSubmissionDate" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="GroupWorkScheduleGuid" ColumnName="GroupWorkScheduleGuid" />
+          <ScalarProperty Name="GroupNameGuid" ColumnName="GroupNameGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_IndividualWorkScheduleList">
+      <EntityTypeMapping TypeName="SMSModel.vw_IndividualWorkScheduleList">
+        <MappingFragment StoreEntitySet="vw_IndividualWorkScheduleList">
+          <ScalarProperty Name="IndividualWork" ColumnName="IndividualWork" />
+          <ScalarProperty Name="IndividualWorkName" ColumnName="IndividualWorkName" />
+          <ScalarProperty Name="IndividualWorkGivenDate" ColumnName="IndividualWorkGivenDate" />
+          <ScalarProperty Name="IndividualWorkSubmissionDate" ColumnName="IndividualWorkSubmissionDate" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="IndividualWorkInformation" ColumnName="IndividualWorkInformation" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="IndividualWorkScheduleGuid" ColumnName="IndividualWorkScheduleGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_LessonClassList">
+      <EntityTypeMapping TypeName="SMSModel.vw_LessonClassList">
+        <MappingFragment StoreEntitySet="vw_LessonClassList">
+          <ScalarProperty Name="TeacherProgram" ColumnName="TeacherProgram" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_LessonClassListForTeacher">
+      <EntityTypeMapping TypeName="SMSModel.vw_LessonClassListForTeacher">
+        <MappingFragment StoreEntitySet="vw_LessonClassListForTeacher">
+          <ScalarProperty Name="TeacherProgram" ColumnName="TeacherProgram" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_PaymentCalanderList">
+      <EntityTypeMapping TypeName="SMSModel.vw_PaymentCalanderList">
+        <MappingFragment StoreEntitySet="vw_PaymentCalanderList">
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="RegularPaymentDateFrom" ColumnName="RegularPaymentDateFrom" />
+          <ScalarProperty Name="RegularPaymentDateTo" ColumnName="RegularPaymentDateTo" />
+          <ScalarProperty Name="PaymentCalanderGuid" ColumnName="PaymentCalanderGuid" />
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_PaymentCalanderToClassRoomList">
+      <EntityTypeMapping TypeName="SMSModel.vw_PaymentCalanderToClassRoomList">
+        <MappingFragment StoreEntitySet="vw_PaymentCalanderToClassRoomList">
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="RegularPaymentDateFrom" ColumnName="RegularPaymentDateFrom" />
+          <ScalarProperty Name="RegularPaymentDateTo" ColumnName="RegularPaymentDateTo" />
+          <ScalarProperty Name="PaymentCalanderToClassRoomGuid" ColumnName="PaymentCalanderToClassRoomGuid" />
+          <ScalarProperty Name="MonthGuid" ColumnName="MonthGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_PaymentList">
+      <EntityTypeMapping TypeName="SMSModel.vw_PaymentList">
+        <MappingFragment StoreEntitySet="vw_PaymentList">
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="TinNumber" ColumnName="TinNumber" />
+          <ScalarProperty Name="FSNumber" ColumnName="FSNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_PeriodList">
+      <EntityTypeMapping TypeName="SMSModel.vw_PeriodList">
+        <MappingFragment StoreEntitySet="vw_PeriodList">
+          <ScalarProperty Name="periodView" ColumnName="periodView" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_QuizScheduleList">
+      <EntityTypeMapping TypeName="SMSModel.vw_QuizScheduleList">
+        <MappingFragment StoreEntitySet="vw_QuizScheduleList">
+          <ScalarProperty Name="Quiz" ColumnName="Quiz" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="QuizInformation" ColumnName="QuizInformation" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="QuizScheduleGuid" ColumnName="QuizScheduleGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentAttendanceList">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentAttendanceList">
+        <MappingFragment StoreEntitySet="vw_StudentAttendanceList">
+          <ScalarProperty Name="StudentAttendance" ColumnName="StudentAttendance" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentClassRoomList">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentClassRoomList">
+        <MappingFragment StoreEntitySet="vw_StudentClassRoomList">
+          <ScalarProperty Name="StudentClassRoom" ColumnName="StudentClassRoom" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="StudentClassRoomGuid" ColumnName="StudentClassRoomGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentInfromationDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentInfromationDataView">
+        <MappingFragment StoreEntitySet="vw_StudentInfromationDataView">
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="studentGuid" ColumnName="studentGuid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="studentclassroomGuid" ColumnName="studentclassroomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentList">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentList">
+        <MappingFragment StoreEntitySet="vw_StudentList">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentListByClassRoomId">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentListByClassRoomId">
+        <MappingFragment StoreEntitySet="vw_StudentListByClassRoomId">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="StudentClassRoomGuid" ColumnName="StudentClassRoomGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentPaymentDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentPaymentDataView">
+        <MappingFragment StoreEntitySet="vw_StudentPaymentDataView">
+          <ScalarProperty Name="payment" ColumnName="payment" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="FSNumber" ColumnName="FSNumber" />
+          <ScalarProperty Name="TinNumber" ColumnName="TinNumber" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="PaymentCalanderGuid" ColumnName="PaymentCalanderGuid" />
+          <ScalarProperty Name="feesettingGuid" ColumnName="feesettingGuid" />
+          <ScalarProperty Name="paymentGuid" ColumnName="paymentGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForExamResultDataEntry">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForExamResultDataEntry">
+        <MappingFragment StoreEntitySet="vw_StudentsForExamResultDataEntry">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="ExamInformation" ColumnName="ExamInformation" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="HomeClassRoom" ColumnName="HomeClassRoom" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ExamResultGuid" ColumnName="ExamResultGuid" />
+          <ScalarProperty Name="ExamScheduleGuid" ColumnName="ExamScheduleGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForExamResultDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForExamResultDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForExamResultDataView">
+          <ScalarProperty Name="Exam" ColumnName="Exam" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassroomGuid" ColumnName="ClassroomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="ExamScheduleGuid" ColumnName="ExamScheduleGuid" />
+          <ScalarProperty Name="ExamResultGuid" ColumnName="ExamResultGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForExamScheduleDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForExamScheduleDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForExamScheduleDataView">
+          <ScalarProperty Name="examSchdule" ColumnName="examSchdule" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="ExamInformation" ColumnName="ExamInformation" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="ExamScheduleGuid" ColumnName="ExamScheduleGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="StudentClassRoomGuid" ColumnName="StudentClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForExerciseBookResultDataEntry">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForExerciseBookResultDataEntry">
+        <MappingFragment StoreEntitySet="vw_StudentsForExerciseBookResultDataEntry">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="TeacherHomeClassRoom" ColumnName="TeacherHomeClassRoom" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ExerciseBookResultGuid" ColumnName="ExerciseBookResultGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForExerciseBookResultDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForExerciseBookResultDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForExerciseBookResultDataView">
+          <ScalarProperty Name="ExerciseBook" ColumnName="ExerciseBook" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="ExerciseBookResultGuid" ColumnName="ExerciseBookResultGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForIndividualWorkResultDataEntry">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForIndividualWorkResultDataEntry">
+        <MappingFragment StoreEntitySet="vw_StudentsForIndividualWorkResultDataEntry">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IndividualWorkName" ColumnName="IndividualWorkName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="IndividualWorkInformation" ColumnName="IndividualWorkInformation" />
+          <ScalarProperty Name="IndividualWorkGivenDate" ColumnName="IndividualWorkGivenDate" />
+          <ScalarProperty Name="IndividualWorkSubmissionDate" ColumnName="IndividualWorkSubmissionDate" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="TeacherHomeClassRoom" ColumnName="TeacherHomeClassRoom" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="IndividualWorkResultGuid" ColumnName="IndividualWorkResultGuid" />
+          <ScalarProperty Name="IndividualWorkScheduleGuid" ColumnName="IndividualWorkScheduleGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForIndividualWorkResultDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForIndividualWorkResultDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForIndividualWorkResultDataView">
+          <ScalarProperty Name="IndividualWork" ColumnName="IndividualWork" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="IndividualWorkResultGuid" ColumnName="IndividualWorkResultGuid" />
+          <ScalarProperty Name="IndividualWorkScheduleGuid" ColumnName="IndividualWorkScheduleGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForIndividualWorkScheduleDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForIndividualWorkScheduleDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForIndividualWorkScheduleDataView">
+          <ScalarProperty Name="IndividualWorkSchedule" ColumnName="IndividualWorkSchedule" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="IndividualWorkGivenDate" ColumnName="IndividualWorkGivenDate" />
+          <ScalarProperty Name="IndividualWorkSubmissionDate" ColumnName="IndividualWorkSubmissionDate" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="IndividualWorkScheduleGuid" ColumnName="IndividualWorkScheduleGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="StudentClassroomGuid" ColumnName="StudentClassroomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForLessonClassDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForLessonClassDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForLessonClassDataView">
+          <ScalarProperty Name="lessonclass" ColumnName="lessonclass" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="studentGuid" ColumnName="studentGuid" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="teacherGuid" ColumnName="teacherGuid" />
+          <ScalarProperty Name="subjectGuid" ColumnName="subjectGuid" />
+          <ScalarProperty Name="dayGuid" ColumnName="dayGuid" />
+          <ScalarProperty Name="periodGuid" ColumnName="periodGuid" />
+          <ScalarProperty Name="sessionGuid" ColumnName="sessionGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="studentclassroomGuid" ColumnName="studentclassroomGuid" />
+          <ScalarProperty Name="lessonclassGuid" ColumnName="lessonclassGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForQuizResultDataEntry">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForQuizResultDataEntry">
+        <MappingFragment StoreEntitySet="vw_StudentsForQuizResultDataEntry">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="QuizInformation" ColumnName="QuizInformation" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="HomeClassRoom" ColumnName="HomeClassRoom" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="QuizResultGuid" ColumnName="QuizResultGuid" />
+          <ScalarProperty Name="QuizScheduleGuid" ColumnName="QuizScheduleGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForQuizResultDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForQuizResultDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForQuizResultDataView">
+          <ScalarProperty Name="Quiz" ColumnName="Quiz" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="QuizScheduleGuid" ColumnName="QuizScheduleGuid" />
+          <ScalarProperty Name="QuizresultGuid" ColumnName="QuizresultGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForQuizScheduleDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForQuizScheduleDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForQuizScheduleDataView">
+          <ScalarProperty Name="QuizSchdule" ColumnName="QuizSchdule" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="QuizScheduleGuid" ColumnName="QuizScheduleGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="StudentClassRoomGuid" ColumnName="StudentClassRoomGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForTestResultDataEntry">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForTestResultDataEntry">
+        <MappingFragment StoreEntitySet="vw_StudentsForTestResultDataEntry">
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="TestInformation" ColumnName="TestInformation" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="TeacherHomeClassRoom" ColumnName="TeacherHomeClassRoom" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="TestResultGuid" ColumnName="TestResultGuid" />
+          <ScalarProperty Name="TestScheduleGuid" ColumnName="TestScheduleGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForTestResultDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForTestResultDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForTestResultDataView">
+          <ScalarProperty Name="Test" ColumnName="Test" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StudentFullName" ColumnName="StudentFullName" />
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="TestScheduleGuid" ColumnName="TestScheduleGuid" />
+          <ScalarProperty Name="TestResultGuid" ColumnName="TestResultGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentsForTestScheduleDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentsForTestScheduleDataView">
+        <MappingFragment StoreEntitySet="vw_StudentsForTestScheduleDataView">
+          <ScalarProperty Name="TestSchdule" ColumnName="TestSchdule" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="TestScheduleGuid" ColumnName="TestScheduleGuid" />
+          <ScalarProperty Name="StudentGuid" ColumnName="StudentGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+          <ScalarProperty Name="StudentClassRoomGuid" ColumnName="StudentClassRoomGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_StudentUnPaymentDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_StudentUnPaymentDataView">
+        <MappingFragment StoreEntitySet="vw_StudentUnPaymentDataView">
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="ClassRoomName" ColumnName="ClassRoomName" />
+          <ScalarProperty Name="PaymentName" ColumnName="PaymentName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="StartTermDate" ColumnName="StartTermDate" />
+          <ScalarProperty Name="EndTermDate" ColumnName="EndTermDate" />
+          <ScalarProperty Name="RegularPaymentDateFrom" ColumnName="RegularPaymentDateFrom" />
+          <ScalarProperty Name="RegularPaymentDateTo" ColumnName="RegularPaymentDateTo" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="TinNumber" ColumnName="TinNumber" />
+          <ScalarProperty Name="FSNumber" ColumnName="FSNumber" />
+          <ScalarProperty Name="studentGuidOnStudents" ColumnName="studentGuidOnStudents" />
+          <ScalarProperty Name="studentGuidOnPayments" ColumnName="studentGuidOnPayments" />
+          <ScalarProperty Name="paymentGuid" ColumnName="paymentGuid" />
+          <ScalarProperty Name="feesettingGuid" ColumnName="feesettingGuid" />
+          <ScalarProperty Name="classroomGuid" ColumnName="classroomGuid" />
+          <ScalarProperty Name="paymentcalanderGuid" ColumnName="paymentcalanderGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SubjectTeacherClassRoomList">
+      <EntityTypeMapping TypeName="SMSModel.vw_SubjectTeacherClassRoomList">
+        <MappingFragment StoreEntitySet="vw_SubjectTeacherClassRoomList">
+          <ScalarProperty Name="SubjectTeacherClassRoom" ColumnName="SubjectTeacherClassRoom" />
+          <ScalarProperty Name="HomeClassRoom" ColumnName="HomeClassRoom" />
+          <ScalarProperty Name="TableRowGuid" ColumnName="TableRowGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_TeacherList">
+      <EntityTypeMapping TypeName="SMSModel.vw_TeacherList">
+        <MappingFragment StoreEntitySet="vw_TeacherList">
+          <ScalarProperty Name="TeacherFullName" ColumnName="TeacherFullName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="ReservedPhoneNumber" ColumnName="ReservedPhoneNumber" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EngagementDate" ColumnName="EngagementDate" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_TeachersForLessonClassDataView">
+      <EntityTypeMapping TypeName="SMSModel.vw_TeachersForLessonClassDataView">
+        <MappingFragment StoreEntitySet="vw_TeachersForLessonClassDataView">
+          <ScalarProperty Name="lesson" ColumnName="lesson" />
+          <ScalarProperty Name="TimeFrom" ColumnName="TimeFrom" />
+          <ScalarProperty Name="TimeTo" ColumnName="TimeTo" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="lessonclassGuid" ColumnName="lessonclassGuid" />
+          <ScalarProperty Name="subjectteacherclassroomGuid" ColumnName="subjectteacherclassroomGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="dayGuid" ColumnName="dayGuid" />
+          <ScalarProperty Name="periodGuid" ColumnName="periodGuid" />
+          <ScalarProperty Name="sessionGuid" ColumnName="sessionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_TestScheduleList">
+      <EntityTypeMapping TypeName="SMSModel.vw_TestScheduleList">
+        <MappingFragment StoreEntitySet="vw_TestScheduleList">
+          <ScalarProperty Name="Test" ColumnName="Test" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+          <ScalarProperty Name="TestInformation" ColumnName="TestInformation" />
+          <ScalarProperty Name="GivenDate" ColumnName="GivenDate" />
+          <ScalarProperty Name="TestScheduleGuid" ColumnName="TestScheduleGuid" />
+          <ScalarProperty Name="TeacherGuid" ColumnName="TeacherGuid" />
+          <ScalarProperty Name="ClassRoomGuid" ColumnName="ClassRoomGuid" />
+          <ScalarProperty Name="SubjectGuid" ColumnName="SubjectGuid" />
+          <ScalarProperty Name="DayGuid" ColumnName="DayGuid" />
+          <ScalarProperty Name="PeriodGuid" ColumnName="PeriodGuid" />
+          <ScalarProperty Name="SessionGuid" ColumnName="SessionGuid" />
+          <ScalarProperty Name="LessonClassGuid" ColumnName="LessonClassGuid" />
+          <ScalarProperty Name="SubjectTeacherClassRoomGuid" ColumnName="SubjectTeacherClassRoomGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_WorkerList">
+      <EntityTypeMapping TypeName="SMSModel.vw_WorkerList">
+        <MappingFragment StoreEntitySet="vw_WorkerList">
+          <ScalarProperty Name="WorkerFullName" ColumnName="WorkerFullName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="ReservedPhoneNumber" ColumnName="ReservedPhoneNumber" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EngagementDate" ColumnName="EngagementDate" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="WorkerGuid" ColumnName="WorkerGuid" />
+          <ScalarProperty Name="GenderGuid" ColumnName="GenderGuid" />
+          <ScalarProperty Name="LogInUserId" ColumnName="LogInUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="security_UsersInRoles" TypeName="SMSModel.security_UsersInRoles" StoreEntitySet="security_UsersInRoles">
+      <EndProperty Name="security_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="UserProfile">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

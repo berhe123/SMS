@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "List of Test Schedule";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+@section scripts {
+    <script src="~/Scripts/Views/TestSchedule/TestSchedule_List.js" type="text/javascript"></script>
+}
+<section class="dashboard-counts no-padding-bottom">
+    <div class="container-fluid">
+        <div class="row-fluid bg-white has-shadow">
+            <!-- Item -->
+            <div class="span2 text-center">
+                <a href="~/AssignmentSchedule/New" style="text-decoration:none;" class="mnuAssignmentScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div style="margin-left:20px;">
+                            <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                            <div class="span3 title">Assignment</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="span3 text-center">
+                <a href="~/GroupName/New" style="text-decoration:none;" class="mnuGroupNameNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span4 title">Group Work</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="~/QuizSchedule/New" style="text-decoration:none;" class="mnuQuizScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span3 title">Quiz</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span3 text-center">
+                <a href="~/TestSchedule/New" style="text-decoration:none;" class="mnuTestScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-orange"><i class="icon-form"></i></div>
+                        <div class="span3 title">Test</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="~/ExerciseBookResult/New" style="text-decoration:none;" class="mnuExerciseBookResultNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span4 title">Exercise Book</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<div class="client card">
+    <div class="row-fluid bg-light has-shadow">
+        <div class="span12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li><a href="~/TestSchedule/New" style="text-decoration:none;">New</a></li>
+                    <li class="active"><a href="~/TestSchedule/List" style="text-decoration:none;">Manage</a></li>
+                    <li style="float:right;"><a href="~/Teacher/TeacherIndex" style="text-decoration:none;">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid bg-light has-shadow" style="text-align:center;">
+        <h2 class="no-margin-bottom" style="display: inline; float:left; font-weight:normal;">List of Test Schedule</h2>
+    </div>
+    <br />
+    <div class="row-fluid">
+        <div class="statistic span3">
+            <div class="row-fluid">
+                <div class="span8">
+                    <a href="~/TestSchedule/New" style="text-decoration:none;" class="mnuTestScheduleNew">
+                        <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow">
+                            <div class="span6 icon bg-info"><i class="fa fa-tasks"></i></div>
+                            <div class="span6 text"><small>Test</small><br /><strong>Schedule</strong></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br />
+            <div class="row-fluid">
+                <div class="span8">
+                    <a href="~/TestResult/New" style="text-decoration:none;" class="mnuTestResultNew">
+                        <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow">
+                            <div class="span6 icon bg-gray"><i class="fa fa-tasks"></i></div>
+                            <div class="span6 text"><small>Test</small><br /><small>Result</small></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="chart span9">
+            <div class="row-fluid">
+                <div class="span11">
+                    <table class="table table-bordered table-striped table-condensed" id="tblTestSchedule">
+                        <thead>
+                            <tr>
+                                <th width="3%" class="action-button"> </th>
+                                <th width="40%"> Test </th>
+                                <th width="8%"> Start Time </th>
+                                <th width="8%"> End Time </th>
+                                <th width="10%"> Out Of </th>
+                                <th width="10%"> Date </th>
+                                <th width="15%"> Information </th>
+                                <th width="3%" class="action-button"> </th>                                                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="dataTables_empty">
+                                    Loading data from server
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>

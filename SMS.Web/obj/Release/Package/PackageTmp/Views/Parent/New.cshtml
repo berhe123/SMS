@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "New";
+}
+@section scripts{
+    <script src="~/Scripts/Views/Parent/Parent_New.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuParentNew" />
+<div class="container-fluid">
+<ul class="breadcrumb">
+            <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+            <li class="divider"></li>
+            <li>New Parent</li>
+        </ul>
+        <div class="separator bottom">
+        </div>
+        <div class="innerLR">
+            <div class="widget">
+                <div class="widget-head">
+                    <h4 class="heading glyphicons cardio">
+                        <i></i>New Parent</h4>
+                    <p style=""></p>
+                </div>
+                <div class="widget-body">
+    <div class="row-fluid">
+        <div id="Form">
+            @Html.Partial("ParentForm")
+            @Html.Partial("EntityNewButtons")
+        </div>
+    </div></div></div></div>
+</div>

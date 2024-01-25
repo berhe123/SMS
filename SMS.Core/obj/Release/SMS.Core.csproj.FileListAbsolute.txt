@@ -1,0 +1,9 @@
+D:\School Managment System\SMS\SMS.Core\bin\Release\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Core\bin\Release\SMS.Core.pdb
+D:\School Managment System\SMS\SMS.Core\bin\Release\NLog.dll
+D:\School Managment System\SMS\SMS.Core\bin\Release\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Core\bin\Release\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Core\bin\Release\NLog.xml
+D:\School Managment System\SMS\SMS.Core\obj\Release\SMS.Core.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Core\obj\Release\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Core\obj\Release\SMS.Core.pdb

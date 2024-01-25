@@ -1,0 +1,84 @@
+﻿/* Table Selection */
+table tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+table tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
+table tr.even:hover, table tr.even td.highlighted {
+	background-color: #ECFFB3;
+}
+
+table tr.odd:hover, table tr.odd td.highlighted {
+	background-color: #E6FF99;
+}
+
+table th.action-button
+{
+    min-width: 15px;
+}
+
+.gridbutton {
+    cursor: pointer;
+}
+
+.roundiv {
+  padding: 14px 19px 14px 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+input.error { border: 1px solid red; background-color: #FDC; }
+label.error { display: block; color: Red; font-size: 0.8em; } 
+
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    display: none;
+}
+
+#footer .container {
+    margin: 0px;
+}
+
+
+.PASSEDVISITED {
+    
+    background-color: #FF9933;
+    border-color: #C0C0C0; 
+    color: White;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-image: url('Bubble.png');
+    /*padding-left: 50px;*/
+}
+
+.NEARNOTVISITED {
+    background-color: #33CCFF;
+    border-color: #C0C0C0;
+    color: White; /* text color */
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-image: url('ok.png');
+    /*padding-left: 50px;*/
+}
+
+.PASSEDNOTVISITED {
+    background-color: #33CC33;
+    border-color: #C0C0C0;
+    color: White; /* text color */
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-image: url('Money.png');
+    /*padding-left: 50px;*/
+}
+
+h2 {
+font-size: 20px !important;  /* !important added to force override of any other h2 in CSS*/
+}

@@ -1,0 +1,20 @@
+D:\Projects\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.dll
+D:\Projects\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.pdb
+D:\Projects\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.dll
+D:\Projects\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.csprojResolveAssemblyReference.cache
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\bin\Debug\SMS.Entities.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.csprojAssemblyReference.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.csproj.CoreCompileInputs.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Entities\obj\Debug\SMS.Entities.pdb

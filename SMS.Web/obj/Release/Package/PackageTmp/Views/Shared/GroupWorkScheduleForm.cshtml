@@ -1,0 +1,9 @@
+﻿<form class="form-horizontal"> 
+    @Helpers.Select("ClassRoomSubject", "Class Room", "ClassRoomSubjects()", "SubjectTeacherClassRoomGuid", 52)
+    @Helpers.Select("GroupName", "Group Name", "GroupNames()", "GroupNameGuid", "disabled", 52)    
+    @Helpers.Input("Title", "GroupWorkTitle", "required", "text", 50)                
+    @Helpers.Date("Given Date", "GroupWorkGivenDate", "required")  
+    @Helpers.Date("Submission Date", "GroupWorkSubmissionDate", "required")
+    @Helpers.Input("Out Of", "OutOf", "required digits", "text", 50)
+    @Helpers.TextArea("Information", "Information", "required", "text", 50, 5, false)
+</form>

@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "List of Student Attendance";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+@section scripts {
+    <script src="~/Scripts/Views/StudentAttendance/StudentAttendance_List.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuAssignmentResultList" />
+<br />
+<div class="client card">
+    <div class="row-fluid bg-light has-shadow">
+        <div class="span12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li><a href="~/StudentAttendance/New" style="text-decoration:none;">New</a></li>
+                    <li class="active"><a href="~/StudentAttendance/List" style="text-decoration:none;">Manage</a></li>
+                    <li style="float:right;"><a href="~/Teacher/TeacherIndex" style="text-decoration:none;">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid bg-light has-shadow" style="text-align:center;">
+        <h2 class="no-margin-bottom" style="display: inline; float:left; font-weight:normal;">List of Student Attendance</h2>
+    </div>
+    <br />
+    <div class="row-fluid">
+        <div class="chart span12">
+            <div class="row-fluid" style="margin-left:5px;">
+                @*<div class="form-horizontal">*@
+                @Helpers.Select("ClassRoomSubject", "Class Room and Subject", "ClassRoomSubjects()", "LessClassGuid", 50)
+                @*</div>*@
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row-fluid" style="margin-left: 5px;">
+        <div class="span11">
+            <table class="table table-bordered table-striped table-condensed" id="tblStudentAttendance">
+                <thead>
+                    <tr>
+                        <th width="3%" class="action-button">
+                        </th>
+                        <th>
+                            Student Attendance
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Comment
+                        </th>
+                        <th width="3%" class="action-button">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span1"></div>
+    </div>
+</div>

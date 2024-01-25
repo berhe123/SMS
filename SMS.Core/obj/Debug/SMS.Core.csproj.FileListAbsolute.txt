@@ -1,0 +1,38 @@
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.dll
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.pdb
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\NLog.dll
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.dll
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.pdb
+D:\Projects\School Managment System\SMS\SMS.Core\bin\Debug\NLog.xml
+D:\Projects\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csprojResolveAssemblyReference.cache
+D:\Projects\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.dll
+D:\Projects\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.pdb
+D:\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.pdb
+D:\School Managment System\SMS\SMS.Core\bin\Debug\NLog.dll
+D:\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Core\bin\Debug\NLog.xml
+D:\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\NLog.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\NLog.xml
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csprojResolveAssemblyReference.cache
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Core.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\NLog.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\SMS.Entities.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\bin\Debug\NLog.xml
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csprojAssemblyReference.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csproj.CoreCompileInputs.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.csproj.CopyComplete
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Core\obj\Debug\SMS.Core.pdb

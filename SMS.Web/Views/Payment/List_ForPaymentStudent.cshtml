@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Information, List of Lesson Class";
+}
+@section scripts{
+    <script src="~/Scripts/Views/Payment/Payment_ListForStudent.js" type="text/javascript"></script>
+}
+<div class="client card">
+    <div class="row-fluid">
+        <div class="span6">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li><a href="~/Student/StudentIndex" style="text-decoration:none;">Information</a></li>
+                    <li class="active"><a href="~/Payment/List_ForPaymentStudent" style="text-decoration:none;">Payment</a></li>
+                    <li><a href="~/Payment/List_ForUnPaymentStudent" style="text-decoration:none;">UnPayment</a></li>
+                </ul>
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-condensed" id="tblPayment">
+                        <thead>
+                            <tr>
+                                <th style="width:60%"> Payment </th>
+                                <th style="width:10%"> Amount </th>
+                                <th style="width:30%"> Payment Date </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="dataTables_empty">
+                                    Loading data from server
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="span6">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="~/Student/StudentIndex" style="text-decoration:none;">Lesson Class</a></li>
+                    <li><a href="#Attendance" style="text-decoration:none;">Attendance</a></li>
+                </ul>
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-condensed" id="tblLessonClass">
+                        <thead>
+                            <tr>
+                                <th style="width:70%"> Lesson </th>
+                                <th style="width:15%"> From </th>
+                                <th style="width:15%"> To </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="dataTables_empty">
+                                    Loading data from server
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <h2>Schedule</h2>
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="~/Student/StudentIndex" style="text-decoration:none;">Assignment</a></li>
+                    <li><a href="#GroupWork" style="text-decoration:none;">Group Work</a></li>
+                    <li><a href="~/QuizSchedule/List_ForStudent" style="text-decoration:none;">Quiz</a></li>
+                    <li><a href="~/TestSchedule/List_ForStudent" style="text-decoration:none;">Test</a></li>
+                    <li><a href="~/ExamSchedule/List_ForStudent" style="text-decoration:none;">Exam</a></li>
+                </ul>
+
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-condensed" id="tblAssignmentSchedule">
+                        <thead>
+                            <tr>
+                                <th style="width:65%"> Assignment </th>
+                                <th style="width:5%"> OutOf </th>
+                                <th style="width:15%"> Given Date </th>
+                                <th style="width:15%"> Submission Date </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="dataTables_empty">
+                                    Loading data from server
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="span6">
+            <h2>Result</h2>
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="~/Student/StudentIndex" style="text-decoration:none;">Assignment</a></li>
+                    <li><a href="#GroupWork" style="text-decoration:none;">Group Work</a></li>
+                    <li><a href="~/QuizResult/List_ForStudent" style="text-decoration:none;">Quiz</a></li>
+                    <li><a href="~/TestSchedule/List_ForStudent" style="text-decoration:none;">Test</a></li>
+                    <li><a href="#ExerciseBook" style="text-decoration:none;">Exercise Book</a></li>
+                    <li><a href="~/ExamSchedule/List_ForStudent" style="text-decoration:none;">Exam</a></li>
+                </ul>
+                <div class="card-body">
+                    <table class="table table-bordered table-striped table-condensed" id="tblAssignmentResult">
+                        <thead>
+                            <tr>
+                                <th style="width:60%"> Assignment </th>
+                                <th style="width:10%"> OutOf </th>
+                                <th style="width:10%"> Result </th>
+                                <th style="width:20%"> Comment </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="dataTables_empty">
+                                    Loading data from server
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#SemisterResult" style="text-decoration:none;">Semister Result</a></li>
+                    <li><a href="#CumulativeResult" style="text-decoration:none;">Cumulative Result</a></li>
+                    <li><a href="#Rank" style="text-decoration:none;">Rank</a></li>
+                </ul>
+                <div class="card-body">
+                    <div id="my-tab-content" class="tab-content">
+                        <div class="tab-pane active" id="SemisterResult">
+                            <div class="control-group">
+                                <div id="SemisterResult">
+                                    @*@Helpers.Input("TIN #", "SettingValue", "required digits", "text", 10)*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            @Helpers.TextArea("Your Comment", "StudentGuid", "required", "text", 200, 5, true)
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <div id="Form-Button_holder">
+                <br />
+                <button class="btn btn-primary" type="button" data-bind="click: handler.Save">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

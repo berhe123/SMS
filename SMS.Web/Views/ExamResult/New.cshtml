@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "New Final Exam Result";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+@section scripts{
+    <script src="~/Scripts/Views/ExamResult/ExamResult_New3.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuExamResultNew" />
+<br />
+<div class="client card">
+    <div class="row-fluid bg-light has-shadow">
+        <div class="span12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="~/ExamResult/New" style="text-decoration:none;">New</a></li>
+                    <li><a href="~/ExamResult/List" style="text-decoration:none;">Manage</a></li>
+                    <li style="float:right;"><a href="~/Teacher/TeacherIndex" style="text-decoration:none;">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid bg-light has-shadow" style="text-align:center;">
+        <h2 class="no-margin-bottom" style="display: inline; float:left; font-weight:normal;">New Final Exam Result</h2>
+    </div>
+    <br />
+    <div class="row-fluid" style="padding-left:10px;">
+        <div class="span8">
+            @Helpers.Select("ClassRoom", "Class Room", "ClassRooms()", "classroomGuid", 52)
+            @Helpers.Select("Subject", "Subject", "Subjects()", "ExamScheduleGuid", "disabled", 52)
+            <br />
+            <button id="btnShowStudents" class="btn btn-secondary">Show Students</button>
+        </div>
+    </div>
+    <br/>
+    <div class="row-fluid">
+        <div class="span11" style="padding-left:10px;">
+            <table class="table table-bordered table-striped table-condensed" id="tblStudent">
+                <thead>
+                    <tr>
+                        <th style="width:0%" class="hidden"> TableRowGuid </th>
+                        <th style="width:45%"> Student Name </th>
+                        <th style="width:15%"> Result </th>
+                        <th style="width:40%"> Comment </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span1"></div>
+    </div>
+    <div class="row-fluid" style="padding-left:10px;">
+        <div class="span8" style="margin-bottom:5px; margin-right:5px;">
+            <button id="btnSaveResult" class="btn btn-primary">Save Result</button>
+        </div>
+    </div>
+</div>

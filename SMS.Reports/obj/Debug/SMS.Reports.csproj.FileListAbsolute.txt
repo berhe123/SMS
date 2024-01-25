@@ -1,0 +1,10 @@
+D:\Projects\School Managment System\SMS\SMS.Reports\bin\Debug\SMS.Reports.dll
+D:\Projects\School Managment System\SMS\SMS.Reports\bin\Debug\SMS.Reports.pdb
+D:\Projects\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.dll
+D:\Projects\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.pdb
+D:\Projects\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Reports\bin\Debug\SMS.Reports.dll
+D:\School Managment System\SMS\SMS.Reports\bin\Debug\SMS.Reports.pdb
+D:\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.dll
+D:\School Managment System\SMS\SMS.Reports\obj\Debug\SMS.Reports.pdb

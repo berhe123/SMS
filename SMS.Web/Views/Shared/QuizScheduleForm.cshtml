@@ -1,0 +1,10 @@
+﻿<form class="form-horizontal"> 
+    @Helpers.Select("ClassRoomSubject", "Class Room and Subject", "ClassRoomSubjects()", "classroomsubjectGuid", 52)  
+    @Helpers.Select("Period", "Period", "Periods()", "LessonClassGuid", "disabled", 52)  
+    @Helpers.Input("Title", "QuizName", "required", "Text", 50)          
+    @Helpers.Date("Start Time", "StartTime", "required")  
+    @Helpers.Date("End Time", "EndTime", "required")    
+    @Helpers.Input("Out Of", "OutOf", "required digits", "Text", 50)
+    @Helpers.Date("Date", "GivenDate", "required")
+    @Helpers.TextArea("Information", "QuizInformation", "required","Text",50,5,false)
+</form>

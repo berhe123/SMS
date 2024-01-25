@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+@section scripts{
+    <script src="~/Scripts/Views/ExamResult/ExamResult_Edit.js" type="text/javascript"></script>
+}
+
+<input id="mnu-active" type="hidden" value="mnuExamResultList" />
+<input id="txtId" type="hidden" value="@Model" />
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+        <li class="divider"></li>
+        <li><a href="~/ExamResult/List"><i></i>Exam Result List</a></li>
+        <li class="divider"></li>
+        <li>Edit Exam Result </li>
+    </ul>
+    <div class="separator bottom">
+    </div>
+    <div class="innerLR">
+        <div class="widget">
+            <div class="widget-head">
+                <h4 class="heading glyphicons cardio">
+                    <i></i>Edit Exam Result</h4>
+            </div>
+            <div class="widget-body">
+                <div class="row-fluid">
+                    <div id="Form">
+                        @Html.Partial("ExamResultForm")
+                        @Html.Partial("EntityNewButtons")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

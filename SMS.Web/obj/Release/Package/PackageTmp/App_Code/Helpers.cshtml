@@ -1,0 +1,308 @@
+﻿@helper Input(string label, string value)
+    {
+    @Input(label, value, "", "text")
+}
+
+@helper Input(string label, string value, string cls)
+    {
+    @Input(label, value, cls, "text")
+}
+
+@helper File(string label, string value)
+    {
+    @Input(label, value, "", "file")
+}
+
+@helper File(string label, string value, string cls)
+    {
+    @Input(label, value, cls, "file")
+}
+
+@helper Input(string label, string value, string cls, string type)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" />
+        </div>
+    </div>   
+}
+@helper Radio(string label, string value, string cls, string id)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@id.Replace(" ", "")" type="radio" class="@cls"  placeholder="@label" />
+        </div>
+    </div>   
+}
+
+@helper Input(string label, string value, string cls, string type, string id, string name)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@id.Replace(" ", "")" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" name="@name" />
+        </div>
+    </div>   
+}
+
+@helper Input(string label, string value, string cls, string type, int widthp)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" style=" width:@widthp%; " />
+        </div>
+    </div>   
+}
+
+@helper InputHidden(string label, string value, string cls, string type, int widthp)
+{
+    <input name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="@type" class="@cls hidden" data-bind="value: @value" placeholder="@label" style=" width:@widthp%; " />
+}
+
+@helper Input(string label, string value, string cls, string type, int widthp, string id)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@id.Replace(" ", "")" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" style=" width:@widthp%; " />
+        </div>
+    </div>   
+}
+@helper TextArea(string label, string value, string cls, string type, int widthp, int rows, bool labelontop)
+{
+    <div class="control-group">
+        @if (labelontop)
+        {
+            
+            <div class="controls pull-left">
+                <label class="control-label" style="width:200px; ">@label</label>               
+                <textarea name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" style="margin-right:50px; width:@widthp%;" rows="@rows" >
+                </textarea>
+            </div>
+        }
+        else
+        {
+            <label class="control-label">@label</label>
+            <div class="controls">
+                <textarea name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="@type" class="@cls" data-bind="value: @value" placeholder="@label" style=" width:@widthp%;" rows="@rows">
+                </textarea>
+            </div>
+        }
+
+    </div>   
+}
+
+@helper CheckBox(string label, string value)
+    {
+    @CheckBox(label, value, "")
+}
+
+@helper CheckBox(string label, string value, string cls)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input name="@value" id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="checkbox" class="@cls" data-bind="checked: @value" placeholder="@label" />
+        </div>
+    </div>   
+}
+
+@helper Date(string label, string value)
+    {
+    @Date(label, value, "")
+}
+
+@helper Date(string label, string value, string cls)
+    {    
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="datetime" class="dateinput @cls" data-bind="date: @value, format: 'DD/MM/YYYY hh:mm'" placeholder="@label" /> @*data-bind="value: @value"*@
+        </div>
+    </div>   
+}
+
+@helper Date(string label, string value, string cls, string id)
+    {    
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input id="@string.Format("txt{0}", @id)" type="datetime" class="dateinput @cls" data-bind="date: @value, format: 'DD/MM/YYYY hh:mm'" placeholder="@label" /> @*data-bind="value: @value"*@
+        </div>
+    </div>   
+}
+
+
+@helper DateFromTo(string label, string value, string cls)
+    {        
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <input id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="datetime" class="dateinput @cls" data-bind="date: @value, format: 'DD/MM/YYYY hh:mm'" placeholder="@label" /> @*data-bind="value: @value"*@
+        </div>
+    </div> 
+}
+
+@helper Time(string label, string value, string cls)
+    {    
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="input-append bootstrap-timepicker">
+            <input id="@string.Format("txt{0}", @label.Replace(" ", ""))" type="text" class="input-small" data-bind="value: @value" placeholder="@label" />
+            <span class="add-on"><i class="icon-time"></i></span>
+        </div>
+    </div>   
+}
+
+
+@helper Select(string label, string options, string value)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <select style="width:220px" id="@string.Format("cmb{0}", @value)" class="combo" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value',
+                               optionsCaption: 'Choose...', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+@helper Select(string label, string options, string value, int widthp)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>        
+        <div class="controls">
+            <select style="width:@widthp%" id="@string.Format("cmb{0}", @value)" class="combo" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value', 
+                               optionsCaption: 'Choose...', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+
+@helper Select(string controlname, string label, string options, string value, int widthp)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>        
+        <div class="controls">
+            <select style="width:@widthp%" id="@string.Format("cmb{0}", @controlname)" class="combo" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value', 
+                               optionsCaption: 'Choose...', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+
+@helper Select(string controlname, string label, string options, string value, string cls, int widthp)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>        
+        <div class="controls">
+            <select style="width:@widthp%" id="@string.Format("cmb{0}", @controlname)" class="combo @cls" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value', 
+                               optionsCaption: 'Choose...', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+
+@helper Select(string label, string options, string value,bool showAll)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <select style="width:220px" id="@string.Format("cmb{0}", @value)" class="combo" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value',
+                               optionsCaption: 'All', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+@helper Select(string label, string options, string value, int widthp, bool showAll)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>        
+        <div class="controls">
+            <select style="width:@widthp%" id="@string.Format("cmb{0}", @value)" class="combo" data-bind="options: @options, 
+                               optionsText: 'Text', 
+                               optionsValue: 'Value', 
+                               optionsCaption: 'All', 
+                               value: @value, select2: { }">       
+            </select>
+        </div>
+    </div>   
+}
+
+
+
+@helper Location(string label, string value, string text)
+    {    
+    @Picker(label, value, text, "myModal", "OnPopup", "")    
+}
+
+@helper Location(string label, string value, string text, string cls)
+    {    
+    @Picker(label, value, text, "myModal", "OnPopup", cls)    
+}
+
+@helper Picker(string label, string value, string text, string modalId)
+    {    
+    @Picker(label, value, text, modalId, "OnPopup", "")   
+}
+
+@helper Picker(string label, string value, string text, string modalId, string cls)
+    {    
+    @Picker(label, value, text, modalId, "OnPopup", cls)   
+}
+@helper Picker(string label, string value, string text, string modalId, string onClick, string cls)
+{
+     @Picker(label, value, text, modalId, "OnPopup", cls, "handler.model")      
+}
+@helper Picker(string label, string value, string text, string modalId, string onClick, string cls, string model)
+    {    
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <div class="input-append">
+                <input id="@string.Format("txt{0}", @value)" type="text" class="@cls" data-bind="value: @text, uniqueName: true" placeholder="@label" />
+                <a onclick="@string.Format("{0}(handler.model.{1}, handler.model.{2}, '{3}', {4})", @onClick, @value, @text, @modalId, @model)" class="btn">Pick</a>
+            </div>
+        </div>
+    </div>   
+}
+
+@helper Combo(string label, string value, Type enumType)
+    {
+    <div class="control-group">
+        <label class="control-label">@label</label>
+        <div class="controls">
+            <select style="width: 220px" class="combo" data-bind="value: @value">
+                @{ int i = 0; }
+                @foreach (var item in Enum.GetNames(enumType))
+                {
+                    <option value="@i">@item</option>
+                    i++;
+                }
+            </select>
+        </div>
+    </div> 
+}
+
+@helper DefList(string title, string value)
+    {
+    <dt>@title</dt>
+    <dd data-bind="text: @value"></dd>
+}

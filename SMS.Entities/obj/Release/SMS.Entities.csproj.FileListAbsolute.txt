@@ -1,0 +1,5 @@
+D:\School Managment System\SMS\SMS.Entities\bin\Release\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Entities\bin\Release\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Entities\obj\Release\SMS.Entities.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Entities\obj\Release\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Entities\obj\Release\SMS.Entities.pdb

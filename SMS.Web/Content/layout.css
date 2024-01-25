@@ -1,0 +1,45 @@
+﻿.hero-unit 
+{
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.container-fluid.maincontainer
+{
+    padding:0px;
+}
+
+.span10.main-content {
+  margin-left:14.52991452991453%;
+  width: 85.1%;
+}
+
+.span2.sidebar
+{
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    top: 128px;
+}
+
+.navbar
+{
+    margin-bottom: inherit;
+}
+
+.sidebar .accordion {border-top: 1px solid #ccc;margin-bottom: 20px;margin-right:1px}
+.sidebar .accordion-heading {text-shadow: 1px 1px 0 #efefef;background: #e0e0e0;-webkit-box-shadow: inset 0px 1px 0px 0px #ececec;box-shadow: inset 0px 1px 0px 0px #ececec}
+.sidebar .accordion-heading a:hover {background-color: #cfcfcf}
+.sidebar .accordion-group{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;margin-bottom:0;border-color:#ccc;border-style:solid;border-width:0 0 1px}
+.sidebar .accordion-group a{color:#222;text-decoration:none!important}
+.sidebar .accordion-group .active a{color:#fff}
+.sidebar .accordion-group .accordion-heading a{color:#222}
+.sidebar .accordion-inner{border-top:1px solid #ccc;background:#fafafa}	
+
+
+.left-menu .accordion-heading {
+    text-shadow: 1px 1px 0 #efefef;
+    background: #e0e0e0;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ececec;
+    box-shadow: inset 0px 1px 0px 0px #ececec;
+}

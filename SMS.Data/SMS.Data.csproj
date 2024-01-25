@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDD106DA-BDBE-4B68-8614-B057206D5717}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Data</RootNamespace>
+    <AssemblyName>SMS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademicCalander.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppSetting.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRoom.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRoomsForPaymentCalander.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Day.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSchedule.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseBookResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeeSetting.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupMember.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupName.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWorkResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWorkSchedule.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualWorkResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualWorkSchedule.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LessonClass.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Letter.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Month.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parent.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ParentComment.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCalander.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCalandersToClassRoom.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Period.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuizSchedule.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_Membership.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_OAuthMembership.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_Roles.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendance.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentClassRoom.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentComment.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectTeacherClassRoom.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherComment.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSchedule.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalGroupWorkResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalIndividualWorkResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalQuizResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalSum.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalTestResult.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsersInLocation.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_ExamScheduleList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_FeeSettingList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_GroupNameList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_GroupWorkResultList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_GroupWorkScheduleList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_IndividualWorkScheduleList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_LessonClassList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_LessonClassListForTeacher.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_PaymentCalanderList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_PaymentCalanderToClassRoomList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_PaymentList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_PeriodList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_QuizScheduleList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentAttendanceList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentClassRoomList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentInfromationDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentListByClassRoomId.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentPaymentDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForExamResultDataEntry.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForExamResultDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForExamScheduleDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForExerciseBookResultDataEntry.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForExerciseBookResultDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForIndividualWorkResultDataEntry.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForIndividualWorkResultDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForIndividualWorkScheduleDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForLessonClassDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForQuizResultDataEntry.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForQuizResultDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForQuizScheduleDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForTestResultDataEntry.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForTestResultDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentsForTestScheduleDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_StudentUnPaymentDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_SubjectTeacherClassRoomList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_TeacherList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_TeachersForLessonClassDataView.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_TestScheduleList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_WorkerList.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Worker.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="SMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SMS.edmx</DependentUpon>
+      <LastGenOutput>SMS.Context.cs</LastGenOutput>
+    </None>
+    <None Include="SMS.edmx.diagram">
+      <DependentUpon>SMS.edmx</DependentUpon>
+    </None>
+    <None Include="SMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SMS.edmx</DependentUpon>
+      <LastGenOutput>SMS.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

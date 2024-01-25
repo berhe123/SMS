@@ -1,0 +1,26 @@
+﻿@{
+    if (User.IsInRole("Administrator"))
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    if (User.IsInRole("Student"))
+    {
+        Layout = "~/Views/Shared/_StudentLayout.cshtml";
+    }
+    if (User.IsInRole("Teacher"))
+    {
+        Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+    }
+    if (User.IsInRole("TeacherAdmin"))
+    {
+        Layout = "~/Views/Shared/_TeacherAdminLayout.cshtml";
+    }
+    if (User.IsInRole("Parenet"))
+    {
+        Layout = "~/Views/Shared/_ParentLayout.cshtml";
+    }
+    if (User.IsInRole("Finance"))
+    {
+        Layout = "~/Views/Shared/_FinanceLayout.cshtml";
+    }
+}

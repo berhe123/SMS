@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "New Group Work Schedule";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+@section scripts{
+    <script src="~/Scripts/Views/GroupWorkSchedule/GroupWorkSchedule_New3.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuGroupWorkScheduleNew" />
+<section class="dashboard-counts no-padding-bottom">
+    <div class="container-fluid">
+        <div class="row-fluid bg-white has-shadow">
+            <!-- Item -->
+            <div class="span2 text-center">
+                <a href="~/IndividualWorkSchedule/New" style="text-decoration:none;" class="mnuIndividualWorkScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div style="margin-left:20px;">
+                            <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                            <div class="span3 title">Assignment</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="span3 text-center">
+                <a href="~/GroupName/New" style="text-decoration:none;" class="mnuGroupNameNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-orange"><i class="icon-form"></i></div>
+                        <div class="span4 title">Group Work</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="~/QuizSchedule/New" style="text-decoration:none;" class="mnuQuizScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span3 title">Quiz</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span3 text-center">
+                <a href="~/TestSchedule/New" style="text-decoration:none;" class="mnuTestScheduleNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span3 title">Test</div>
+                    </div>
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="~/ExerciseBookResult/New" style="text-decoration:none;" class="mnuExerciseBookResultNew">
+                    <div class="row-fluid item d-flex align-items-center">
+                        <div class="span4 icon bg-gray"><i class="icon-form"></i></div>
+                        <div class="span4 title">Exercise Book</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<div class="client card">
+    <div class="row-fluid bg-light has-shadow">
+        <div class="span12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="~/GroupWorkSchedule/New" style="text-decoration:none;">New</a></li>
+                    <li><a href="~/GroupWorkSchedule/List" style="text-decoration:none;">Manage</a></li>
+                    <li style="float:right;"><a href="~/Teacher/TeacherIndex" style="text-decoration:none;">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid bg-light has-shadow" style="text-align:center;">
+        <h2 class="no-margin-bottom" style="display: inline; float:left; font-weight:normal;">New Group Work Schedule</h2>
+    </div>
+    <br />
+    <div class="row-fluid">
+        <div class="statistic span3">
+            <div class="row-fluid">
+                <div class="span8">
+                    <a href="~/GroupName/New" style="text-decoration:none;" class="mnuGroupNameNew">
+                        <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow">
+                            <div class="span6 icon bg-gray"><i class="fa fa-tasks"></i></div>
+                            <div class="span6 text"><small>Create Group Member</small></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span8">
+                    <a href="~/GroupWorkSchedule/New" style="text-decoration:none;" class="mnuGroupWorkScheduleNew">
+                        <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow">
+                            <div class="span6 icon bg-info"><i class="fa fa-tasks"></i></div>
+                            <div class="span6 text"><small>Group Work</small><br /><strong>Schedule</strong></div>
+                        </div>
+                        </a>
+                   </div>
+                </div>
+            <div class="row-fluid">
+                <div class="span8">
+                    <a href="~/GroupWorkResult/New" style="text-decoration:none;" class="mnuGroupWorkResultNew">
+                        <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow">
+                            <div class="span6 icon bg-gray"><i class="fa fa-tasks"></i></div>
+                            <div class="span6 text"><small>Group Work Result</small></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="chart span9">
+            <div class="row-fluid">
+                <div class="span11">
+                    <div class="row-fluid statistic d-flex align-items-center bg-white has-shadow" style="margin-bottom:5px;">
+                        @Html.Partial("GroupWorkScheduleForm")
+                        @Html.Partial("EntityNewButtons")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

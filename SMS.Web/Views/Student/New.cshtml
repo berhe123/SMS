@@ -1,0 +1,33 @@
+﻿@model SMS.Models.RegisterModel
+@{
+    ViewBag.Title = "New";
+}
+@section scripts{
+
+    <script src="~/Scripts/Views/Student/Student_New.js" type="text/javascript"></script>
+}
+    
+<input id="mnu-active" type="hidden" value="mnuStudentNew" />
+
+<div class="container-fluid">
+<ul class="breadcrumb">
+            <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+            <li class="divider"></li>
+            <li>New Student</li>
+        </ul>
+        <div class="separator bottom">
+        </div>
+        <div class="innerLR">
+            <div class="widget">
+                <div class="widget-head">
+                    <h4 class="heading glyphicons cardio">
+                        <i></i>New Student</h4>
+                </div>
+                <div class="widget-body">
+    <div class="row-fluid">
+        <div id="Form">
+            @Html.Partial("StudentForm")
+            @Html.Partial("EntityNewButtons")
+        </div>
+    </div></div></div></div>
+</div>

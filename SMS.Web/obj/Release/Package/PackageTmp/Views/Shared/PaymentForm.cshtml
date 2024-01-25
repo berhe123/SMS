@@ -1,0 +1,9 @@
+﻿<form class="form-horizontal">
+    @Helpers.Select("ClassRoom","Class Room", "ClassRooms()", "classroomGuid", 50)
+    @Helpers.Select("Student","Student Name", "Students()", "StudentGuid","disabled", 50)     
+    @Helpers.Select("PaymentCalander", "Payment Calander", "PaymentCalanders()", "paymentcalanderGuid", 50)     
+    @Helpers.Select("FeeSetting","Fee Setting", "FeeSettings()", "FeeSettingGuid","disabled", 50)  
+    @Helpers.Date("Payment Date", "PaymentDate", "required")  
+    @Helpers.Input("TIN Number", "TinNumber", "required digits", "text", 50)
+    @Helpers.Input("FS Number", "FSNumber", "required digits", "text", 50)
+</form>

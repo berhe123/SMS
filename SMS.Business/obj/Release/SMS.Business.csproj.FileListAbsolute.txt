@@ -1,0 +1,13 @@
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Business.dll
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Business.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Release\EntityFramework.dll
+D:\School Managment System\SMS\SMS.Business\bin\Release\NLog.dll
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Core.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Release\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Release\EntityFramework.xml
+D:\School Managment System\SMS\SMS.Business\bin\Release\NLog.xml
+D:\School Managment System\SMS\SMS.Business\obj\Release\SMS.Business.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Business\obj\Release\SMS.Business.dll
+D:\School Managment System\SMS\SMS.Business\obj\Release\SMS.Business.pdb

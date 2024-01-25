@@ -1,0 +1,8 @@
+﻿<form class="form-horizontal">
+    @Helpers.Input("First Name", "FirstName", "required", "text", 50)
+    @Helpers.Input("Father Name", "FatherName", "required", "text", 50)  
+    @Helpers.Input("Grand Father Name", "GrandFatherName", "required", "text", 50)  
+    @Helpers.Date("Birth Date", "BirthDate", "required")   
+    @Helpers.Select("Gender", "Genders()","GenderGuid", 50) 
+    @Helpers.Date("Registration Date", "RegistrationDate", "required")      
+</form>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "List of Fee Setting";
+}
+@section scripts {
+    <script src="~/Scripts/Views/FeeSetting/FeeSetting_List.js" type="text/javascript"></script>
+}
+<input id="mnu-active" type="hidden" value="mnuFeeSettingList" />
+<div class="container-fluid">
+    <ul class="breadcrumb">
+            <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+            <li class="divider"></li>
+            <li>Fee Setting List</li>
+        </ul>
+        <div class="separator bottom">
+        </div>
+        <div class="innerLR">
+            <div class="widget">
+                <div class="widget-head">
+                    <h4 class="heading glyphicons cardio">
+                        <i></i>Fee Setting List</h4>
+                </div>
+                <div class="widget-body">
+    <div class="row-fluid">
+        <div class="row-fluid">
+            @Helpers.Select("ClassRoom","Class Room", "ClassRooms()", "ClassRoomGuid", 50)
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                <table class="table table-bordered table-striped table-condensed" id="tblFeeSetting">
+                    <thead>
+                        <tr>
+                            <th width="3%" class="action-button"> </th>
+                            <th> Class Room </th>
+                            <th> Month </th>
+                            <th> Amount </th>
+                            <th width="3%" class="action-button"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5" class="dataTables_empty">
+                                Loading data from server
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div></div></div>
+</div> 

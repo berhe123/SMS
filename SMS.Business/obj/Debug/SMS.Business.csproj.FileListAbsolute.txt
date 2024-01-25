@@ -1,0 +1,54 @@
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.dll
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.pdb
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.dll
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\NLog.dll
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.dll
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.dll
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.pdb
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.pdb
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.xml
+D:\Projects\School Managment System\SMS\SMS.Business\bin\Debug\NLog.xml
+D:\Projects\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csprojResolveAssemblyReference.cache
+D:\Projects\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.dll
+D:\Projects\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.dll
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.dll
+D:\School Managment System\SMS\SMS.Business\bin\Debug\NLog.dll
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.dll
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.dll
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.pdb
+D:\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.xml
+D:\School Managment System\SMS\SMS.Business\bin\Debug\NLog.xml
+D:\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csprojResolveAssemblyReference.cache
+D:\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.dll
+D:\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\NLog.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.pdb
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.xml
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\NLog.xml
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csprojResolveAssemblyReference.cache
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.dll
+D:\WiDocuments\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Business.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\NLog.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Core.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\SMS.Entities.pdb
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\EntityFramework.xml
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\bin\Debug\NLog.xml
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csprojAssemblyReference.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csproj.CoreCompileInputs.cache
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.csproj.CopyComplete
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.dll
+E:\Data\Projects List\School Managment System\SMS\SMS.Business\obj\Debug\SMS.Business.pdb

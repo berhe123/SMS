@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c8008c94c6f4c75b5d6c6c33bd4aa7b" Name="Diagram1">
+        <EntityTypeShape EntityType="SMSModel.AcademicCalander" Width="1.5" PointX="11.25" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.AppSetting" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ClassRoom" Width="1.5" PointX="9" PointY="62.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ClassRoomsForPaymentCalander" Width="1.5" PointX="6.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Day" Width="1.5" PointX="11.25" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ExamResult" Width="1.5" PointX="5.25" PointY="44.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ExamSchedule" Width="1.5" PointX="13.5" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ExerciseBookResult" Width="1.5" PointX="8.25" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.FeeSetting" Width="1.5" PointX="6" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Gender" Width="1.5" PointX="0.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.GroupMember" Width="1.5" PointX="5.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.GroupName" Width="1.5" PointX="13.5" PointY="56" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.GroupWorkResult" Width="1.5" PointX="15.75" PointY="56" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.GroupWorkSchedule" Width="1.5" PointX="15.75" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Holiday" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.IndividualWorkResult" Width="1.5" PointX="5.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.IndividualWorkSchedule" Width="1.5" PointX="13.5" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.LessonClass" Width="1.5" PointX="18.5" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Letter" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Month" Width="1.5" PointX="3.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ParentComment" Width="1.5" PointX="7.5" PointY="58.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Parent" Width="1.5" PointX="5.25" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.PaymentCalander" Width="1.5" PointX="6" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.PaymentCalandersToClassRoom" Width="1.5" PointX="9" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Payment" Width="1.5" PointX="8.25" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Period" Width="1.5" PointX="16.25" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.QuizResult" Width="1.5" PointX="8.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.QuizSchedule" Width="1.5" PointX="20.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.security_Membership" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.security_OAuthMembership" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.security_Roles" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Session" Width="1.5" PointX="11.25" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentAttendance" Width="1.5" PointX="11.25" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentClassRoom" Width="1.5" PointX="11.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentComment" Width="1.5" PointX="5.25" PointY="76.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentProfile" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Student" Width="1.5" PointX="3" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Subject" Width="1.5" PointX="3" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.SubjectTeacherClassRoom" Width="1.5" PointX="11.25" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.sysdiagram" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TeacherComment" Width="1.5" PointX="5.25" PointY="62.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Teacher" Width="1.5" PointX="3" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TestResult" Width="1.5" PointX="11.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TestSchedule" Width="1.5" PointX="20.75" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TotalGroupWorkResult" Width="1.5" PointX="5.25" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TotalIndividualWorkResult" Width="1.5" PointX="5.25" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TotalQuizResult" Width="1.5" PointX="8.25" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TotalSum" Width="1.5" PointX="13.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.TotalTestResult" Width="1.5" PointX="8.25" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.UserProfile" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.UsersInLocation" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.Worker" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_ExamScheduleList" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_FeeSettingList" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_GroupNameList" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_GroupWorkResultList" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_GroupWorkScheduleList" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_IndividualWorkScheduleList" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_LessonClassList" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_LessonClassListForTeacher" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_PaymentCalanderList" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_PaymentCalanderToClassRoomList" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_PaymentList" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_PeriodList" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_QuizScheduleList" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentAttendanceList" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentClassRoomList" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentInfromationDataView" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentList" Width="1.5" PointX="14.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentListByClassRoomId" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentPaymentDataView" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForExamResultDataEntry" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForExamResultDataView" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForExamScheduleDataView" Width="1.5" PointX="12.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForExerciseBookResultDataEntry" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForExerciseBookResultDataView" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForIndividualWorkResultDataEntry" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForIndividualWorkResultDataView" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForIndividualWorkScheduleDataView" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForLessonClassDataView" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForQuizResultDataEntry" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForQuizResultDataView" Width="1.5" PointX="6.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForQuizScheduleDataView" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForTestResultDataEntry" Width="1.5" PointX="18.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForTestResultDataView" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentsForTestScheduleDataView" Width="1.5" PointX="20.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_StudentUnPaymentDataView" Width="1.5" PointX="8.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_SubjectTeacherClassRoomList" Width="1.5" PointX="10.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_TeacherList" Width="1.5" PointX="20.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_TeachersForLessonClassDataView" Width="1.5" PointX="12.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_TestScheduleList" Width="1.5" PointX="20.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.vw_WorkerList" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_AcademicCalanders" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_FeeSettings_ClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_StudentClassRooms_ClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_SubjectTeacherClassRooms_ClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_PaymentCalandersToClassRoom_ClassRoomsForPaymentCalanders1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExamSchedules_Days" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_LessonClasses_Days" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExamResults_ExamSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExamResults_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_ExamResults" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExamSchedules_Sessions" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExamSchedules_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExerciseBookResults_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ExerciseBookResults_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_ExerciseBookResults" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_FeeSettings_PaymentCalanders" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Payments_FeeSettings" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Students_Genders" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Teachers_Genders" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupMembers_GroupNames" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupMembers_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupNames_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupWorkResults_GroupNames" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupWorkSchedules_GroupNames" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupWorkResults_GroupWorkSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_GroupWorkSchedules_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_IndividualWorkResults_IndividualWorkSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_IndividualWorkResults_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_IndividualWorkSchedules_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_LessonClasses_Periods" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_LessonClasses_SubjectTeacherClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_QuizSchedules_LessonClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_StudentAttendances_LessonClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TestSchedules_LessonClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_PaymentCalanders1_PaymentCalanders1" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_PaymentCalandersToClassRoom_Months" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_ParentComments_Parents" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Parents_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Payments_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_Periods_Sessions" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_QuizResults_QuizSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_QuizResults_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_StudentAttendances_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_StudentClassRooms_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_StudentComments_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TestResults_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalGroupWorkResult_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalIndividualWorkResult_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalQuizResult_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalTestResult_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_SubjectTeacherClassRooms_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalGroupWorkResult_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalIndividualWorkResult_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalQuizResult_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalTestResult_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_SubjectTeacherClassRooms_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TeacherComments_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TestResults_TestSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_TotalGroupWorkResult" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_TotalIndividualWorkResult" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_TotalQuizResult" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_TotalSum_TotalTestResult" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.FK_UsersInLocations_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.security_UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

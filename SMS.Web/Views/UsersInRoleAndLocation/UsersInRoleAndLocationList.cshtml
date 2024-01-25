@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+@section scripts{
+    <script src="~/Scripts/Views/UsersInRoleAndLocation/UsersInRoleAndLocation_List3.js" type="text/javascript"></script>
+}
+
+<input id="mnu-active" type="hidden" value="mnuUsersInRoleAndLocationList" />
+<input id="txtId" type="hidden" value="@Model" />
+<div class="container-fluid">  
+<ul class="breadcrumb">
+        <li>You are here: <a href="~/Home/Index" class="glyphicons home"><i></i>Home</a></li>
+        <li class="divider"></li>
+        <li>Manage Users In Role And Location </li>
+    </ul>
+    <div class="separator bottom">
+    </div>
+    <div class="innerLR">
+        <div class="widget">
+            <div class="widget-head">
+                <h4 class="heading glyphicons cardio">
+                    <i></i>Users In Role And Location</h4>
+            </div>
+            <div class="widget-body">
+<div class="row-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered table-striped table-condensed" id="tblUser">
+                <thead>
+                    <tr>
+                        <th  style="width:1%">
+                            User Id
+                        </th>
+                        <th  style="width:39%">
+                            User Name
+                        </th>
+                        <th   style="width:60%">
+                            User Full Name
+                        </th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="span6">
+                <table class="table table-bordered table-striped table-condensed" id="tblLocation">
+                <thead>
+                    <tr>
+                        <th  style="width:10%">
+                            Add Location
+                        </th>
+                        <th style="width:80%">
+                            Location
+                        </th>                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="dataTables_empty">
+                            Loading data from server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="span6">
+              <table class="table table-bordered table-striped table-condensed" id="tblRole">
+                    <thead>                         
+                        <tr>
+                            <th  style="width:10%">
+                                Add Role
+                            </th>
+                            <th style="width:80%">
+                                Role
+                            </th>                       
+                        </tr>
+                    </thead>                                                            
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="dataTables_empty">
+                                Loading data from server
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="control-group">
+            <a id="btnSave" class="btn btn-primary">Save</a>
+        </div>
+        
+    </div>
+</div></div></div></div>
+</div>
+      

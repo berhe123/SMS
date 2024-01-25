@@ -1,0 +1,7 @@
+﻿<form class="form-horizontal">   
+    @Helpers.Select("Teacher", "Teachers()", "TeacherGuid", 50) 
+    @Helpers.Select("Subject", "Subjects()", "SubjectGuid", 50)
+    @Helpers.Select("Class Room", "ClassRooms()", "ClassRoomGuid", 50)     
+    @Helpers.CheckBox("Home Class Room", "homeClassRoom")
+    
+</form>

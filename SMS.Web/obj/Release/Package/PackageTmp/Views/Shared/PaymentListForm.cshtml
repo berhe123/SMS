@@ -1,0 +1,5 @@
+﻿<form class="form-horizontal">
+    @Helpers.Select("ClassRoom","Choose Class Room", "ClassRooms()", "StudentGuid", 50)
+    @Helpers.Select("Student","Choose Student","Students()","StudentGuid","disabled",50)
+    @Helpers.Select("PaymentCalander", "Choose Payment Calander", "PaymentCalanders()", "FeeSettingGuid", 50)
+</form>
